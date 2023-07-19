@@ -1,10 +1,192 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: 'Work Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+h3 {
+    font-size: 45px;
+    font-weight: 700;
+    color: #0B0223;
+    padding-top:20px ;
+}
+
+header {
+    padding: 0px 100px;
+}
+
+.btn {
+    padding: 21px 40px;
+    color: #FFF;
+    font-weight: 600;
+}
+
+
+/* ================== DEDAULT STYLE  */
+
+/* ================= MAIN STYLE START  */
+
+/* //////////////////////// HEADER START  */
+
+/* ==============NAV =========================== */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+
+}
+
+
+
+.nav .logo span {
+    color: #FF42A5;
+}
+
+.nav .logo img {
+    width: 80px;
+    margin-left: 20px;
+}
+
+.menu>ul {
+    display: flex;
+    align-items: center;
+    padding:30px 0px 0px  80px;
+}
+
+.menu li {
+    margin-right: 30px;
+    color: #3C354F;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 20px 0px;
+}
+
+.menu button {
+    border: 0;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    color: #3C354F;
+    font-size: 1rem;
+    font-weight: 600;
+
+}
+
+.menu button i {
+    padding: 0 5px;
+    font-size: 1.5rem;
+}
+
+.menu button #youtube {
+    color: #F61C0D;
+}
+
+
+/* ===================BANNER ====================== */
+
+.banner-head {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-contant {
+    margin: 0 auto;
+}
+
+.banner-img img {
+    width: 100%;
+    margin: 20px 0px 0px 0px ;
+}
+
+.banner-contant .title {
+    color: #0B0223;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.banner-contant .banner-title {
+    text-align: center;
+    font-size: 95px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding-top: 30px;
+    background: linear-gradient( #F948B2 0%, #8758F1 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.banner-contant>ul {
+    padding: 30px 0px;
+}
+
+.banner-contant li {
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px 0;
+}
+
+.banner-contant .btn1 {
+    background: #FF42A5;
+    border: 0;
+    border-radius: 40px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.banner-contant .btn2 {
+    background: #4EC5F7;
+    border: 0;
+    border-radius: 40px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+/* //////////////////////// HEADER END  */
+
+
+
+/* ^^^^^^^^^^^^^^^^^^^ MEDIA QUARY ^^^^^^^^^^^^^^^^^^^^^^^ */
+
+@media screen and (max-width: 570px){
+    .nav , 
+    .menu>ul {
+        flex-direction: column;
+    }
+    header{
+        padding: 0 20px;
+    }
+    .banner-head{
+        flex-direction: column;
+    }
+    .menu>ul{
+        padding: 0;
+    }
+    .banner-img img {
+        width: 100%;
+        margin: 200px 0px 40px 0px;
+        
+    }
+}
+
+@media screen and (min-width: 570px) and (max-width: 960px){
+
 }
