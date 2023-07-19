@@ -86,7 +86,7 @@ img {
     margin-left: 20px;
 }
 
-.menu>ul {
+.menu .menu-info {
     display: flex;
     align-items: center;
     padding: 30px 0px 0px 80px;
@@ -402,20 +402,23 @@ main {
 .game-link-section {
     margin: 100px auto;
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: repeat(4,1fr) ;
 }
 
 .game-link-section button {
     width: 200px;
     height: 70px;
     padding: 10px;
-    border: 1px solid #FF42A5;
+    border: 0;
     border-radius: 40px;
     font-size: 1.5rem;
-
     display: flex;
     align-items: center;
     justify-content: space-around;
+    transition: .5s;
+}
+.game-link-section button:hover{
+        border: 1px solid #FF42A5;
 }
 
 .game-link-section button img {
@@ -426,15 +429,55 @@ main {
 /* ////////////////////////////// MAIN END  */
 
 /* ////////////////// */
-footer {
+.footer-content{
+    padding-top: 7.5rem;
     height: 39.75rem;
     background-color: #0B0223;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
-footer .logo{
+footer .logo h3{
     color: #FFF;
 }
 footer .logo img{
     width: 100px;
+}
+footer .menu .menu-link {
+    display: flex;
+    gap: 10px;
+    padding: 30px 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+footer .menu .apps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .menu .apps li {
+    padding: 0 10px;
+    font-size: 2rem;
+    color: #FFFFFF;
+}
+footer .menu li a {
+    color: #FFFFFF;
+}
+
+footer .copywrite-menu {
+    margin: 50px 0;
+    display: flex;
+    padding: 0px 20px;
+    gap: 33px;
+}
+footer .copywrite-menu li a{
+    color: #ffffff88;
+    font-size: 1rem;
+}
+footer small {
+    color: #ffffff88;
+    text-align: center;
 }
 /* /////////////////////// */
 
@@ -447,7 +490,7 @@ footer .logo img{
 @media screen and (max-width: 570px) {
 
     .nav,
-    .menu>ul,
+    .menu .menu-info,
     .gamer-section,
     .videos-section .videos {
         flex-direction: column;
@@ -526,6 +569,9 @@ footer .logo img{
         grid-template-columns: auto auto;
     }
 
+    .menu .menu-link{
+        grid-template-columns: 3;
+    }
 }
 
 @media screen and (min-width: 570px) and (max-width: 960px) {
