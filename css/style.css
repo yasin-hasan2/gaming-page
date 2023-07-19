@@ -17,15 +17,29 @@ a {
 ul {
     list-style: none;
 }
+
 h3 {
     font-size: 45px;
     font-weight: 700;
     color: #0B0223;
-    padding-top:20px ;
+    padding-top: 20px;
+}
+
+.main-section {
+    width: 100%;
+}
+
+.max-width {
+    max-width: 1400px;
 }
 
 header {
-    padding: 0px 100px;
+    padding: 0px 80px 60px 80px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
 }
 
 .btn {
@@ -34,10 +48,20 @@ header {
     font-weight: 600;
 }
 
+.clr {
+    background: linear-gradient(#F948B2 0%, #8758F1 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.detail {
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+}
 
 /* ================== DEDAULT STYLE  */
 
-/* ================= MAIN STYLE START  */
 
 /* //////////////////////// HEADER START  */
 
@@ -65,7 +89,7 @@ header {
 .menu>ul {
     display: flex;
     align-items: center;
-    padding:30px 0px 0px  80px;
+    padding: 30px 0px 0px 80px;
 }
 
 .menu li {
@@ -110,8 +134,9 @@ header {
 }
 
 .banner-img img {
-    width: 100%;
-    margin: 20px 0px 0px 0px ;
+    display: flex;
+    /* width: 100%; */
+    margin: 20px 0px 0px 0px;
 }
 
 .banner-contant .title {
@@ -128,9 +153,6 @@ header {
     font-weight: 800;
     text-transform: uppercase;
     padding-top: 30px;
-    background: linear-gradient( #F948B2 0%, #8758F1 100%);
-    -webkit-background-clip: text;
-    color: transparent;
 }
 
 .banner-contant>ul {
@@ -162,31 +184,392 @@ header {
 
 /* //////////////////////// HEADER END  */
 
+/* ////////////////////////////// MAIN START  */
+
+main {
+    padding: 40px 80px 60px 80px;
+    margin: 0 auto;
+}
+
+/* ************************gamer section  */
+.gamer-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0;
+}
+
+/* .gamer-section img {
+    width: 100%;
+} */
+
+.gamer-content {
+    width: 50%;
+    text-align: right;
+    padding-right: 30px;
+}
+
+.gamer-content .gamer-title {
+    padding: 30px 0px;
+}
+
+.gamer-content .gamer-details {
+    padding: 20px 0;
+    line-height: 30px;
+}
+
+.gamer-content button {
+    border: 0;
+    border-radius: 40px;
+    background: #F948B2;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.gamer-content .message {
+    color: #3C354F;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.gamer-content .message span {
+    font-size: 1rem;
+    color: #534C64;
+}
+
+
+/* ******************************videos-section */
+.videos-section {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.videos-section .videos-title {
+    margin: 25px 0;
+}
+
+.videos-section .videos-details {
+    margin: 20px 0;
+}
+
+.videos-section .videos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+
+.videos .card {
+    width: 25%;
+}
+
+.videos .card p {
+    padding-top: 10px;
+}
+
+/* .videos .card img{
+} */
+.overlay-container {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.overlay-container:hover .overlay {
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    bottom: 4px;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: #0000008e;
+}
+
+#icon {
+    color: #FFFFFF;
+    font-size: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* ********************************** games-card-section */
+
+.card-position {
+    width: 1100px;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    margin: 50px auto;
+
+
+}
+
+.game-banner-content {
+    text-align: end;
+    margin-right: 100px;
+    width: 50%;
+    margin: 40px 100px;
+}
+
+.game-banner-content .game-banner-title {
+    padding: 30px 0;
+}
+
+.game-banner-img {
+    position: relative;
+}
+
+.game-banner-img .sub-img-one {
+    /* border-radius: 0.5rem; */
+    /* border: 2px solid #FFF; */
+    position: absolute;
+    left: -70px;
+    bottom: -40px;
+}
+
+.game-card-two {
+    flex-direction: row-reverse;
+}
+
+/* .game-card-two .game-banner-content{
+
+} */
+.game-banner-img .sub-img-two {
+    /* border-radius: 0.5rem; */
+    /* border: 2px solid #FFF; */
+    position: absolute;
+    right: -70px;
+    bottom: -40px;
+}
+
+.size {
+    width: 250px;
+}
+
+
+/* **********************second banner  */
+.second-banner {
+    width: 100%;
+    padding: 50px;
+    background: linear-gradient(#F948B2 0%, #FF42A5 100%);
+    color: #FFF;
+}
+
+.second-banner .second-banner-contant {
+    text-align: start;
+    width: 70%;
+    padding-left: 30px;
+}
+
+.second-banner-contant .list-item {
+    display: flex;
+    gap: 40px;
+}
+
+.second-banner-contant p {
+    color: #FFF;
+    padding: 15px 0;
+}
+
+.second-banner-contant .list-item ul {
+    padding: 30px 0;
+    color: #FFF;
+}
+
+.second-banner-contant .list-item li {
+    padding: 10px 0;
+}
+
+.second-banner-contant button {
+    background: #FFF;
+    color: #FF42A5;
+    border: 0;
+    border-radius: 40px;
+}
+
+/* ************************game link section  */
+.game-link-section {
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+.game-link-section button {
+    width: 200px;
+    height: 70px;
+    padding: 10px;
+    border: 1px solid #FF42A5;
+    border-radius: 40px;
+    font-size: 1.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.game-link-section button img {
+    width: 50px;
+
+}
+
+/* ////////////////////////////// MAIN END  */
+
+/* ////////////////// */
+footer {
+    height: 39.75rem;
+    background-color: #0B0223;
+}
+footer .logo{
+    color: #FFF;
+}
+footer .logo img{
+    width: 100px;
+}
+/* /////////////////////// */
+
+
+
 
 
 /* ^^^^^^^^^^^^^^^^^^^ MEDIA QUARY ^^^^^^^^^^^^^^^^^^^^^^^ */
 
-@media screen and (max-width: 570px){
-    .nav , 
-    .menu>ul {
+@media screen and (max-width: 570px) {
+
+    .nav,
+    .menu>ul,
+    .gamer-section,
+    .videos-section .videos {
         flex-direction: column;
     }
-    header{
+
+    .card-position {
+        flex-direction: column;
+        width: 100%;
+        height: 85vh;
+    }
+
+    header {
         padding: 0 20px;
     }
-    .banner-head{
+
+    .banner-head {
         flex-direction: column;
     }
-    .menu>ul{
+
+    .menu>ul {
         padding: 0;
     }
+
+    .banner-img img {
+        margin: 200px 0px 40px 0px;
+
+    }
+
+    main {
+        padding: 40px 20px 60px 20px;
+    }
+
+
+    .videos .card {
+        width: 100%;
+    }
+
+    .size {
+        width: 150px;
+    }
+
+    .game-banner-img .sub-img-one {
+        left: 0px;
+    }
+
+    .game-banner-img .sub-img-two {
+        right: 0px;
+    }
+
+    .gamer-content {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .game-banner-content {
+        width: 100%;
+        margin: 0px 0px 20px 0px;
+        text-align: center;
+    }
+
+    .second-banner {
+        padding: 0;
+    }
+
+    .second-banner .second-banner-contant {
+        text-align: center;
+        padding-left: 0px;
+    }
+
+    .second-banner .banner-img img {
+        width: 80%;
+    }
+
+    .game-link-section {
+        grid-template-columns: auto auto;
+    }
+
+}
+
+@media screen and (min-width: 570px) and (max-width: 960px) {
+
+    .nav,
+    .menu>ul,
+    .gamer-section {
+        flex-direction: column;
+    }
+
+    .card-position {
+        flex-direction: column;
+        width: 100%;
+        height: 85vh;
+    }
+
+    header {
+        padding: 0 20px;
+    }
+
+    .banner-head {
+        flex-direction: column;
+    }
+
+    .menu>ul {
+        margin-top: 20px;
+        padding: 0;
+    }
+
     .banner-img img {
         width: 100%;
         margin: 200px 0px 40px 0px;
-        
+
     }
-}
 
-@media screen and (min-width: 570px) and (max-width: 960px){
+    .gamer-content {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
 
+    .game-banner-content {
+        width: 100%;
+        margin: 0px 0px 20px 0px;
+        text-align: center;
+    }
 }
